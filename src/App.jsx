@@ -1,7 +1,10 @@
 import { useState } from "react";
 import "./index.css"
+import Navbar from "./components/Navbar";
 function App() {
-	return <div className="border border-red-500 text-5xl ">app</div>;
+	return <main>
+    <Navbar />
+  </main>;
 }
 
 export default App;
