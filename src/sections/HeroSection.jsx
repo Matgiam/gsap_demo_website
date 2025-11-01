@@ -9,11 +9,11 @@ function HeroSection() {
 			delay: 1,
 		});
 
-		tl.to(".hero-content", { opacity: 1, y: 0, ease: "power1.inOut" })
+		tl
+			.to(".hero-content", { opacity: 1, y: 0, ease: "power1.inOut" })
 			.to(
 				".hero-text-scroll",
 				{
-				
 					clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 					ease: "circ.out",
 				},
@@ -24,8 +24,26 @@ function HeroSection() {
 				opacity: 0,
 				y: 50,
 				ease: "power2.out",
-			}), "-=0.5";
+			}),
+			"-=0.5";
+
+		const heroTl = gsap.timeline({
+			scrollTrigger: {
+				trigger: ".hero-container",
+				start: "top top",
+				end: "bottom top",
+				scrub: true,
+				markers: true,
+			},
+		});
+		heroTl.to(".hero-container", {
+			rotate: 7,
+			scale: 0.85,
+			y: 300,
+			ease: "power1.inOut",
+		});
 	});
+
 	return (
 		<section className="bg-main-bg">
 			<div className="hero-container">
