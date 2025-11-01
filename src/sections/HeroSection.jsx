@@ -33,7 +33,7 @@ function HeroSection() {
 				start: "top top",
 				end: "bottom top",
 				scrub: true,
-				markers: true,
+				// markers: true,
 			},
 		});
 		heroTl.to(".hero-container", {
