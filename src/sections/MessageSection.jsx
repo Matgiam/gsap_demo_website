@@ -41,7 +41,7 @@ function MessageSection() {
 			},
 		});
 		revealTl.to(".msg-text-scroll", {
-			duration: 0.5,
+			
 			clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
 			ease: "circ.inOut",
 		});
@@ -49,15 +49,16 @@ function MessageSection() {
 		const paragraphTl = gsap.timeline({
 			scrollTrigger: {
 				trigger: ".message-content p",
-				start: "top center",
+				start: "top 80%",
+				end: "bottom 65%",
 				// markers: true,
+				scrub: true
 			},
 		});
 		paragraphTl.from(paragraphMessage.words, {
 			y: 80,
 			rotate: 3,
 			ease: "power1.inOut",
-			duration: 0.5,
 			stagger: 0.01,
 		});
 	});
