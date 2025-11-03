@@ -5,7 +5,7 @@ import { useGSAP } from "@gsap/react";
 import { SplitText } from "gsap/all";
 import gsap from "gsap";
 
-const NutritionSection = () => {
+function NutritionSection() {
 	const isMobile = useMediaQuery({
 		query: "(max-width: 768px)",
 	});
@@ -33,7 +33,7 @@ const NutritionSection = () => {
 			scrollTrigger: {
 				trigger: ".nutrition-section",
 				start: "top center",
-                end: "60% center",
+				end: "60% center",
 				scrub: true,
 				// markers: true,
 			},
@@ -118,6 +118,6 @@ const NutritionSection = () => {
 			</div>
 		</section>
 	);
-};
+}
 
 export default NutritionSection;
