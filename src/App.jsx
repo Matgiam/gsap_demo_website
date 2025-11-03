@@ -25,9 +25,9 @@ function App() {
 					<HeroSection />
 					<MessageSection />
 					<FlavorSection />
-          <NutritionSection/>
-          <BenefitSection/>
-					<div className="h-dvh"></div>
+					<NutritionSection />
+					<BenefitSection />
+					{/* <div className="h-dvh"></div> */}
 				</div>
 			</div>
 		</main>
