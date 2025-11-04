@@ -81,7 +81,7 @@ const cards = [
     translation: "translate-y-[5%]",
   },
   {
-    src: "/videos/f7.mp4",
+    src: "public/videos/f7.mp4",
     rotation: "rotate-z-[-3deg]",
     name: "Melisa",
     img: "/images/p7.png",
